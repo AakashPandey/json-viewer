@@ -74,7 +74,11 @@
           {/each}
         </div>
         {/if}
+        {#if item["responseFromOwnerText"] != null}
+        <span class="ml-8 mb-4"><b class="text-sm">Owner Reply</b> {item["responseFromOwnerText"]}</span>
+        {/if}
       </div>
+      
     {/each}
   </div>
 </div>
